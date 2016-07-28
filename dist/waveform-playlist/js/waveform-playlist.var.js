@@ -2552,6 +2552,9 @@ var WaveformPlaylist =
 	        key: 'soloTrack',
 	        value: function soloTrack(track) {
 	            var soloedList = this.soloedTracks;
+	            // change behavior to solo one track and mute others with one click 
+	            soloedList[0] = track; 
+	            /*
 	            var index = soloedList.indexOf(track);
 	
 	            if (index > -1) {
@@ -2559,6 +2562,7 @@ var WaveformPlaylist =
 	            } else {
 	                soloedList.push(track);
 	            }
+	            */
 	        }
 	    }, {
 	        key: 'adjustTrackPlayout',
